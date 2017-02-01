@@ -65,11 +65,11 @@ static int parse(char *str)
             ctrl = true;
             str += 1;
         } else if ('-' == str[1]) {
-            if (str[0] == 'C') {
+            if ('C' == str[0]) {
                 ctrl = true;
-            } else if (str[0] == 'S') {
+            } else if ('S' == str[0]) {
                 shift = true;
-            } else if (str[0] == 'M') {
+            } else if ('M' == str[0]) {
                 alt = true;
             } else {
                 return -1;
